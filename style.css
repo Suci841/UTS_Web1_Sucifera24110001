@@ -1,0 +1,140 @@
+/* Reset dasar */
+body {
+    margin: 0;
+    font-family:'Courier New', Courier, monospace;
+    line-height: 1.6;
+    background-color: rgb(237, 146, 239);
+  }
+  
+  /* Navbar */
+  nav {
+    background: #c5aded;
+    color: #fff;
+    padding: 1rem;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+  }
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+  }
+  nav ul li a:hover {
+    color: purple;
+    transition: all.3s ease-in-out;
+  }
+  
+  /* Header */
+  header {
+    text-align: center;
+    padding: 2rem;
+    background: #f8abeb;
+  }
+  header h1 {
+    margin-bottom: 1rem;
+  }
+  
+  /* Produk */
+  .produk-list {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem;
+  }
+  .produk-item {
+    text-align: center;
+    border: 1px solid #ffc8dd;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 30%;
+  }
+  .produk-item img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  .produk-item h3 {
+    margin: 1rem 0;
+  }
+  .produk-item button {
+    background: #f8abeb;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .produk-item button:hover {
+    background: purple;
+    transition: all.3s ease-in-out;
+  }
+  
+  /* Tabel Keranjang */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+  }
+  table th, table td {
+    border: 1px solid purple;
+    padding: 0.8rem;
+    text-align: left;
+  }
+  table thead {
+    background: #c988da;
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  table tbody tr {
+    background-color: #f8abeb;
+  }
+  
+  /* Formulir */
+  form {
+    max-width: 600px;
+    margin: 1rem auto;
+  }
+  form label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+  }
+  form input, form textarea, form select, form button {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #984880;
+    border-radius: 5px;
+    background-color: #f8abeb;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  form button {
+    background: #a15389;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+  form button:hover {
+    color: #d891a8;
+    transition: all.3s ease-in-out;
+  }
+  
+  /* Responsif */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+    .produk-list {
+      flex-direction: column;
+      align-items: center;
+    }
+    .produk-item {
+      width: 90%;
+      margin-bottom: 1rem;
+    }
+  }

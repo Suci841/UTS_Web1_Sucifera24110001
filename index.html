@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toko Online</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#produk">Produk</a></li>
+      <li><a href="#keranjang">Keranjang</a></li>
+      <li><a href="#tentang">Tentang Kami</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <!-- Bagian Home -->
+  <header id="home">
+    <h1>Selamat Datang di Toko Online Kami</h1>
+    <p>Temukan produk terbaik dengan harga terjangkau!</p>
+  </header>
+
+  <!-- Bagian Produk -->
+  <section id="produk">
+    <h2>Produk Kami</h2>
+    <div class="produk-list">
+      <div class="produk-item">
+        <img src="WhatsApp Image 2024-11-29 at 14.29.30.jpeg" alt="Produk 1">
+        <h3>Produk 1</h3>
+        <p>Rp400.000</p>
+        <button>Tambah ke Keranjang</button>
+      </div>
+      <div class="produk-item">
+        <img src="WhatsApp Image 2024-11-29 at 14.32.30 (1).jpeg" alt="Produk 2">
+        <h3>Produk 2</h3>
+        <p>Rp500.000</p>
+        <button>Tambah ke Keranjang</button>
+      </div>
+      <div class="produk-item">
+        <img src="WhatsApp Image 2024-11-29 at 14.32.30.jpeg" alt="Produk 3">
+        <h3>Produk 3</h3>
+        <p>Rp600.000</p>
+        <button>Tambah ke Keranjang</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bagian Keranjang -->
+  <section id="keranjang">
+    <h2>Keranjang Belanja</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Produk</th>
+          <th>Jumlah</th>
+          <th>Harga</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Produk 1</td>
+          <td>2</td>
+          <td>Rp800.000</td>
+        </tr>
+        <tr>
+          <td>Produk 2</td>
+          <td>1</td>
+          <td>Rp500.000</td>
+        </tr>
+        <tr>
+            <td>Produk 3</td>
+            <td>1</td>
+            <td>Rp600.000</td>
+          </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Formulir Checkout -->
+  <section id="kontak">
+    <h2>Checkout</h2>
+    <form action="#">
+      <label for="nama">Nama Lengkap:</label>
+      <input type="text" id="nama" name="nama" required>
+
+      <label for="alamat">Alamat Pengiriman:</label>
+      <textarea id="alamat" name="alamat" rows="3" required></textarea>
+
+      <label for="metode">Metode Pembayaran:</label>
+      <select id="metode" name="metode" required>
+        <option value="transfer">Transfer Bank</option>
+        <option value="cod">COD</option>
+        <option value="e-wallet">E-Wallet</option>
+      </select>
+
+      <button type="submit">Selesaikan Pembelian</button>
+    </form>
+  </section>
+</body>
+</html>
